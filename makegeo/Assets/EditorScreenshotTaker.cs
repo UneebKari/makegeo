@@ -32,7 +32,7 @@ public class EditorScreenshotTaker : MonoBehaviour
 				"{0}Screenshot-{1}-{2}.png",
 					prefix, appName, System.DateTime.Now.ToFileTime());
 			Debug.Log ( filename);
-			Application.CaptureScreenshot( filename);
+			ScreenCapture.CaptureScreenshot( filename);
 		}
 	}
 }
